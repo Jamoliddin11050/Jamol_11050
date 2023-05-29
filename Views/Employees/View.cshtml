@@ -1,0 +1,28 @@
+﻿@model Web_11050.Models.UpdateEmployeeViewModel
+@{
+}
+<h1>Edit Book</h1>
+<form method="post" action="View" class='mt-5'>
+  <div class="mb-3">
+    <label for="">Id</label>
+    <input type="text" class="form-control" asp-for="Id" readonly >
+</div>
+<div class="mb-3">
+    <label for="">Name</label>
+    <input type="text" class="form-control" asp-for="Name"  >
+</div>
+<div class="mb-3">
+    <label for="">Email Address</label>
+    <input type="email" class="form-control" asp-for="Email"  placeholder="Enter email">
+</div>
+<div class="mb-3">
+    <label for="">Price</label>
+    <input type="number" class="form-control" asp-for="Price"  placeholder="Enter Price">
+</div>
+<div class="mb-3">
+    <label for="">Name_authour</label>
+    <input type= "text" class="form-control" asp-for="Name_authour"  placeholder="Enter authour">
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Employees">Delete</button>
+</form>
